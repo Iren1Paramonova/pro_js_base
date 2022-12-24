@@ -1,15 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import TextContent from './TextContent';
 import './App.css';
+import { CounterComponent } from './CounterComponent';
+import { Input } from './Input';
 
 function App() {
+  const handler = () => {
+    console.log('Кнопка нажата');
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <TextContent />
-      </header>
+      <CounterComponent title={'Orange'} count={9} />
+      <CounterComponent title={'Apple'} count={4} />
+      <CounterComponent title={'Lemon'} count={3} />
+      <button onClick={handler}> Push me</button>
+      <Input />
     </div>
   );
 }
