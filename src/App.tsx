@@ -14,6 +14,9 @@ function App() {
       <CounterComponent title={'Lemon'} count={3} />
       <button onClick={handler}> Push me</button>
       <Input />
+
+      <img src={'./img.jpg'} alt="img" />
+      <div className="example">HELLO</div>
     </div>
   );
 }
