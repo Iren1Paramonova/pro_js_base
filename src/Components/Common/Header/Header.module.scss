@@ -1,9 +1,17 @@
-.header{
-    width: 100px;
-    height: 60px;
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: beige;
+.header {
+  height: 60px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: beige;
+
+  &_logo {
+    color: red;
+    font-size: 20px;
+  }
+
+  &_title {
+    color: chocolate;
+  }
 }
